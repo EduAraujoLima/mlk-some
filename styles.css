@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+:root {
+  /* violet */
+  --primary-color: 111, 76, 255;
+
+  /* white */
+  --text-color: 256, 256, 256;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(19, 17, 17);
+  color: #fff;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  gap: 5rem;
+  padding: 3rem 5rem;
+  margin: 0;
+  background-color: rgba(var(--primary-color), 0.15);
+  border: 1px solid rgba(var(--primary-color), 0.25);
+  color: rgba(var(--text-color), 0.8);
+}
+
+.list-item {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.list__text {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.list__text-xl {
+  font-size: 5rem;
+}
+
+.list__text-xl:nth-child(1) {
+  font-size: 10rem;
+}
+
+li:first-child {
+  font-size: 10rem;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #30cfd0, #c43ad6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
